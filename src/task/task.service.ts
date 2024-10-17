@@ -2,11 +2,11 @@ import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 import { TaskRepository } from './repository/task.repository';
 import { CreateTaskDTO } from './dto/CreateTask.dto';
 import { UpdateTaskDTO } from './dto/UpdateTask.dto';
-import { StringUtil } from 'src/utils/String.util';
+import { StringUtil } from '../utils/String.util';
 
 @Injectable()
 export class TaskService {
-  constructor(private readonly repository: TaskRepository) {}
+  private readonly repository: TaskRepository;
 
   async getAll() {
     return await this.repository.findAllTasks();
