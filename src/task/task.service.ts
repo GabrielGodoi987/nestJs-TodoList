@@ -6,7 +6,7 @@ import { StringUtil } from '../utils/String.util';
 
 @Injectable()
 export class TaskService {
-  private readonly repository: TaskRepository;
+  constructor(private readonly repository: TaskRepository) {}
 
   async getAll() {
     return await this.repository.findAllTasks();
