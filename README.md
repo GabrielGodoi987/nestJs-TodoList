@@ -29,3 +29,9 @@ $ pnpm run test:e2e
 # test coverage
 $ pnpm run test:cov
 ```
+
+## para a conexão com o banco de dados funcionar corretamente
+```bash
+ # isso irá trazer a cli do prisma para o projeto
+ $ npx prisma generate
+```
