@@ -14,7 +14,7 @@ import { UpdateTaskDTO } from './dto/UpdateTask.dto';
 
 @Controller('task')
 export class TaskController {
-  private readonly taskService: TaskService;
+  constructor(private readonly taskService: TaskService) {}
 
   @Post('create')
   createTask(@Body() createTask: CreateTaskDTO) {
