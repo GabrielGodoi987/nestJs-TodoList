@@ -1,3 +1,6 @@
+##iniciando os estudos de testes unitários e automatizados
+# esse repositório é destinado aos meus estudos de testes unitários e automatizados utilizando o framework jest
+
 ## configurações do projeto
 
 ```bash
